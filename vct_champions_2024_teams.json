@@ -1,0 +1,63 @@
+{
+  "teams": [
+    {
+      "id": "edg",
+      "name": "EDward Gaming",
+      "region": "China",
+      "seed": 1,
+      "elo_rating": 1720.0
+    },
+    {
+      "id": "heretics",
+      "name": "Team Heretics",
+      "region": "EMEA",
+      "seed": 2,
+      "elo_rating": 1710.0
+    },
+    {
+      "id": "leviatan",
+      "name": "LEVIAT\u00c1N",
+      "region": "Americas",
+      "seed": 3,
+      "elo_rating": 1695.0
+    },
+    {
+      "id": "sentinels",
+      "name": "Sentinels",
+      "region": "Americas",
+      "seed": 4,
+      "elo_rating": 1680.0
+    },
+    {
+      "id": "drx",
+      "name": "DRX",
+      "region": "Pacific",
+      "seed": 5,
+      "elo_rating": 1660.0
+    },
+    {
+      "id": "fnatic",
+      "name": "FNATIC",
+      "region": "EMEA",
+      "seed": 6,
+      "elo_rating": 1650.0
+    },
+    {
+      "id": "trace",
+      "name": "Trace Esports",
+      "region": "China",
+      "seed": 7,
+      "elo_rating": 1620.0
+    },
+    {
+      "id": "g2",
+      "name": "G2 Esports",
+      "region": "Americas",
+      "seed": 8,
+      "elo_rating": 1615.0
+    }
+  ],
+  "tournament": "VCT Champions 2024 Playoffs",
+  "date": "August 2024",
+  "note": "ELO ratings estimated from VLR.gg rankings and tournament performance"
+}
