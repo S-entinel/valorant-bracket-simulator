@@ -1,0 +1,721 @@
+{
+  "matches": [
+    {
+      "team_a": "Gen.G",
+      "team_b": "Sentinels",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (B)"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "Team Heretics",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (B)"
+    },
+    {
+      "team_a": "DRX",
+      "team_b": "KR\u00dc Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (A)"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "Bilibili Gaming",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (A)"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "TALON",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (C)"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "Trace Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (C)"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "Paper Rex",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (D)"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "FUT Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Opening (D)"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "Team Heretics",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Winner's (B)"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "DRX",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Winner's (A)"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "Trace Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Winner's (C)"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "G2 Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Winner's (D)"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "FunPlus Phoenix",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Elimination (B)"
+    },
+    {
+      "team_a": "Bilibili Gaming",
+      "team_b": "KR\u00dc Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Elimination (A)"
+    },
+    {
+      "team_a": "TALON",
+      "team_b": "Team Vitality",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Elimination (C)"
+    },
+    {
+      "team_a": "FUT Esports",
+      "team_b": "Paper Rex",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Elimination (D)"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "Sentinels",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Decider (B)"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "KR\u00dc Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Decider (A)"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "Team Vitality",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Decider (C)"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Paper Rex",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Decider (D)"
+    },
+    {
+      "team_a": "DRX",
+      "team_b": "Sentinels",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Quarterfinals"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "EDward Gaming",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Quarterfinals"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Quarterfinals"
+    },
+    {
+      "team_a": "Team Heretics",
+      "team_b": "FNATIC",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Quarterfinals"
+    },
+    {
+      "team_a": "DRX",
+      "team_b": "Trace Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "FNATIC",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "EDward Gaming",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "Team Heretics",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "FNATIC",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Round 2"
+    },
+    {
+      "team_a": "Team Heretics",
+      "team_b": "DRX",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Round 2"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Upper Final"
+    },
+    {
+      "team_a": "Team Heretics",
+      "team_b": "Sentinels",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Round 3"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "Team Heretics",
+      "score_a": 1,
+      "score_b": 3,
+      "event": "VCT 2024: Champions",
+      "round": "Lower Final"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Team Heretics",
+      "score_a": 3,
+      "score_b": 2,
+      "event": "VCT 2024: Champions",
+      "round": "Grand Final"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "GIANTX",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "KOI",
+      "team_b": "Team Liquid",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "Natus Vincere",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "Team Heretics",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Team Liquid",
+      "team_b": "FUT Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "Gentle Mates",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "FUT Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "Team Heretics",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Team Liquid",
+      "team_b": "Natus Vincere",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "KOI",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "GIANTX",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "Gentle Mates",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Gentle Mates",
+      "team_b": "FNATIC",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "Natus Vincere",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "Team Heretics",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "FUT Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Team Liquid",
+      "team_b": "GIANTX",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "KOI",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Team Liquid",
+      "team_b": "Team Heretics",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "Gentle Mates",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "FUT Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "Natus Vincere",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "GIANTX",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "KOI",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "GIANTX",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "Team Heretics",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Team Vitality",
+      "team_b": "KOI",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Natus Vincere",
+      "team_b": "FNATIC",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Team Liquid",
+      "team_b": "Gentle Mates",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "BBL Esports",
+      "team_b": "FUT Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "Team Liquid",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "Natus Vincere",
+      "team_b": "Team Heretics",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "FNATIC",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "FUT Esports",
+      "team_b": "Team Heretics",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "Team Heretics",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Upper Final"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "FUT Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "FNATIC",
+      "team_b": "FUT Esports",
+      "score_a": 3,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Lower Final"
+    },
+    {
+      "team_a": "Team Heretics",
+      "team_b": "FNATIC",
+      "score_a": 2,
+      "score_b": 3,
+      "event": "VCT 2024: Masters Shanghai",
+      "round": "Grand Final"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "FunPlus Phoenix",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 1"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 1"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Paper Rex",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 1"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "Team Heretics",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 1"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "Karmine Corp",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 2"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Gen.G",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 2"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "LOUD",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 2"
+    },
+    {
+      "team_a": "Team Heretics",
+      "team_b": "Paper Rex",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 2"
+    },
+    {
+      "team_a": "LOUD",
+      "team_b": "EDward Gaming",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 3"
+    },
+    {
+      "team_a": "Karmine Corp",
+      "team_b": "Paper Rex",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Round 3"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "Paper Rex",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "Sentinels",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Upper Final"
+    },
+    {
+      "team_a": "Paper Rex",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "Paper Rex",
+      "score_a": 3,
+      "score_b": 1,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Lower Final"
+    },
+    {
+      "team_a": "Team International",
+      "team_b": "Team Spain",
+      "score_a": 8,
+      "score_b": 13,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Showmatch"
+    },
+    {
+      "team_a": "Gen.G",
+      "team_b": "Sentinels",
+      "score_a": 2,
+      "score_b": 3,
+      "event": "VCT 2024: Masters Madrid",
+      "round": "Grand Final"
+    }
+  ],
+  "metadata": {
+    "total_matches": 89,
+    "scraped_at": "2025-12-24T22:53:01.196260",
+    "source": "vlr.gg"
+  }
+}

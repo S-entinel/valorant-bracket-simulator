@@ -6,8 +6,28 @@
       "name": "EDward Gaming",
       "seed": 1,
       "elo_rating": 1720.0,
-      "championship_prob": 28.0,
-      "finals_prob": 34.0,
+      "championship_prob": 29.0,
+      "finals_prob": 38.0,
+      "semifinals_prob": 59.0,
+      "quarterfinals_prob": 100.0,
+      "round_of_16_prob": 0.0
+    },
+    {
+      "name": "Team Heretics",
+      "seed": 2,
+      "elo_rating": 1710.0,
+      "championship_prob": 17.0,
+      "finals_prob": 26.0,
+      "semifinals_prob": 41.0,
+      "quarterfinals_prob": 100.0,
+      "round_of_16_prob": 0.0
+    },
+    {
+      "name": "LEVIAT\u00c1N",
+      "seed": 3,
+      "elo_rating": 1695.0,
+      "championship_prob": 13.0,
+      "finals_prob": 21.0,
       "semifinals_prob": 54.0,
       "quarterfinals_prob": 100.0,
       "round_of_16_prob": 0.0
@@ -16,29 +36,9 @@
       "name": "DRX",
       "seed": 5,
       "elo_rating": 1660.0,
-      "championship_prob": 18.0,
-      "finals_prob": 37.0,
-      "semifinals_prob": 61.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "Team Heretics",
-      "seed": 2,
-      "elo_rating": 1710.0,
-      "championship_prob": 14.0,
-      "finals_prob": 20.0,
-      "semifinals_prob": 46.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "LEVIAT\u00c1N",
-      "seed": 3,
-      "elo_rating": 1695.0,
-      "championship_prob": 12.0,
-      "finals_prob": 26.0,
-      "semifinals_prob": 54.0,
+      "championship_prob": 10.0,
+      "finals_prob": 29.0,
+      "semifinals_prob": 53.0,
       "quarterfinals_prob": 100.0,
       "round_of_16_prob": 0.0
     },
@@ -46,9 +46,29 @@
       "name": "FNATIC",
       "seed": 6,
       "elo_rating": 1650.0,
-      "championship_prob": 11.0,
-      "finals_prob": 23.0,
-      "semifinals_prob": 39.0,
+      "championship_prob": 8.0,
+      "finals_prob": 27.0,
+      "semifinals_prob": 47.0,
+      "quarterfinals_prob": 100.0,
+      "round_of_16_prob": 0.0
+    },
+    {
+      "name": "Trace Esports",
+      "seed": 7,
+      "elo_rating": 1620.0,
+      "championship_prob": 8.0,
+      "finals_prob": 22.0,
+      "semifinals_prob": 49.0,
+      "quarterfinals_prob": 100.0,
+      "round_of_16_prob": 0.0
+    },
+    {
+      "name": "G2 Esports",
+      "seed": 8,
+      "elo_rating": 1615.0,
+      "championship_prob": 8.0,
+      "finals_prob": 22.0,
+      "semifinals_prob": 51.0,
       "quarterfinals_prob": 100.0,
       "round_of_16_prob": 0.0
     },
@@ -57,28 +77,8 @@
       "seed": 4,
       "elo_rating": 1680.0,
       "championship_prob": 7.0,
-      "finals_prob": 20.0,
+      "finals_prob": 15.0,
       "semifinals_prob": 46.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "G2 Esports",
-      "seed": 8,
-      "elo_rating": 1615.0,
-      "championship_prob": 7.0,
-      "finals_prob": 20.0,
-      "semifinals_prob": 50.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "Trace Esports",
-      "seed": 7,
-      "elo_rating": 1620.0,
-      "championship_prob": 3.0,
-      "finals_prob": 20.0,
-      "semifinals_prob": 50.0,
       "quarterfinals_prob": 100.0,
       "round_of_16_prob": 0.0
     }
@@ -116,8 +116,8 @@
   },
   "metrics": {
     "champion_correct": true,
-    "champion_prob": 28.0,
+    "champion_prob": 29.0,
     "top4_overlap": 3,
-    "avg_top4_prob": 15.25
+    "avg_top4_prob": 16.5
   }
 }
