@@ -1,4 +1,3 @@
-# bracket_simulator.py
 import json
 import random
 import math
@@ -164,29 +163,23 @@ class BracketSimulator:
             self.simulation_results[team["name"]][key] += 1
 
     def simulate_tournament_with_tracking(self) -> Dict[str, Any]:
-        """
-        Simulate one full single-elimination tournament.
-
-        Returns:
-            Dict with champion team under 'champion' key.
-        """
         remaining_teams = self.teams.copy()
 
         while len(remaining_teams) > 1:
-            self.track_advancement(len(remaining_teams), remaining_teams)
 
-            next_round_teams: List[Dict[str, Any]] = []
+            self.track_advancement(len(remaining_teams), remaining_teams)
+            
+            next_round_teams = []
             for i in range(0, len(remaining_teams), 2):
                 team_a = remaining_teams[i]
                 team_b = remaining_teams[i + 1]
                 winner = self.simulate_match(team_a, team_b)
                 next_round_teams.append(winner)
-
+            
             remaining_teams = next_round_teams
-
+        
         champion = remaining_teams[0]
         self.simulation_results[champion["name"]]["championships"] += 1
-        self.simulation_results[champion["name"]]["reached_Finals"] += 1
 
         return {"champion": champion}
 

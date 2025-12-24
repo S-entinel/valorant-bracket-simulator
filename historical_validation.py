@@ -1,4 +1,3 @@
-# historical_validation.py
 """
 Historical validation against VCT Champions 2024 Playoffs.
 
