@@ -1,5 +1,5 @@
 import pytest
-from bracket_simulator import BracketSimulator
+from src.bracket_simulator import BracketSimulator
 
 
 class TestBracketSetup:

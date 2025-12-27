@@ -1,123 +1,47 @@
 {
-  "tournament": "VCT Champions 2024 Playoffs",
-  "simulations": 100,
-  "predictions": [
+  "validation_results": [
     {
-      "name": "EDward Gaming",
-      "seed": 1,
-      "elo_rating": 1720.0,
-      "championship_prob": 29.0,
-      "finals_prob": 38.0,
-      "semifinals_prob": 59.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "Team Heretics",
-      "seed": 2,
-      "elo_rating": 1710.0,
-      "championship_prob": 17.0,
-      "finals_prob": 26.0,
-      "semifinals_prob": 41.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "LEVIAT\u00c1N",
-      "seed": 3,
-      "elo_rating": 1695.0,
-      "championship_prob": 13.0,
-      "finals_prob": 21.0,
-      "semifinals_prob": 54.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "DRX",
-      "seed": 5,
-      "elo_rating": 1660.0,
-      "championship_prob": 10.0,
-      "finals_prob": 29.0,
-      "semifinals_prob": 53.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "FNATIC",
-      "seed": 6,
-      "elo_rating": 1650.0,
-      "championship_prob": 8.0,
-      "finals_prob": 27.0,
-      "semifinals_prob": 47.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "Trace Esports",
-      "seed": 7,
-      "elo_rating": 1620.0,
-      "championship_prob": 8.0,
-      "finals_prob": 22.0,
-      "semifinals_prob": 49.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "G2 Esports",
-      "seed": 8,
-      "elo_rating": 1615.0,
-      "championship_prob": 8.0,
-      "finals_prob": 22.0,
-      "semifinals_prob": 51.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
-    },
-    {
-      "name": "Sentinels",
-      "seed": 4,
-      "elo_rating": 1680.0,
-      "championship_prob": 7.0,
-      "finals_prob": 15.0,
-      "semifinals_prob": 46.0,
-      "quarterfinals_prob": 100.0,
-      "round_of_16_prob": 0.0
+      "tournament": "VCT 2024: Champions",
+      "training_matches": 130,
+      "tournament_teams": 16,
+      "predicted_winner": "EDward Gaming",
+      "predicted_prob": 14.180000000000001,
+      "actual_winner": "EDward Gaming",
+      "actual_winner_prob": 14.180000000000001,
+      "actual_winner_rank": 1,
+      "correct_prediction": true,
+      "top_3": true,
+      "top_5": true,
+      "top_5_predictions": [
+        [
+          "EDward Gaming",
+          14.180000000000001
+        ],
+        [
+          "Team Heretics",
+          13.100000000000001
+        ],
+        [
+          "LEVIAT\u00c1N",
+          13.100000000000001
+        ],
+        [
+          "FunPlus Phoenix",
+          12.659999999999998
+        ],
+        [
+          "FUT Esports",
+          12.620000000000001
+        ]
+      ]
     }
   ],
-  "actual_results": {
-    "champion": "EDward Gaming",
-    "runner_up": "Team Heretics",
-    "semifinals": [
-      "LEVIAT\u00c1N",
-      "Sentinels"
-    ],
-    "quarterfinals": [
-      "DRX",
-      "FNATIC",
-      "Trace Esports",
-      "G2 Esports"
-    ],
-    "matches": {
-      "grand_final": {
-        "winner": "EDward Gaming",
-        "loser": "Team Heretics",
-        "score": "3-2"
-      },
-      "upper_final": {
-        "winner": "EDward Gaming",
-        "loser": "LEVIAT\u00c1N",
-        "score": "2-1"
-      },
-      "lower_final": {
-        "winner": "Team Heretics",
-        "loser": "LEVIAT\u00c1N",
-        "score": "3-1"
-      }
-    }
-  },
   "metrics": {
-    "champion_correct": true,
-    "champion_prob": 29.0,
-    "top4_overlap": 3,
-    "avg_top4_prob": 16.5
+    "total_tournaments": 1,
+    "exact_accuracy": 1.0,
+    "top_3_accuracy": 1.0,
+    "top_5_accuracy": 1.0,
+    "avg_winner_probability": 14.180000000000001,
+    "avg_winner_rank": 1.0
   }
 }

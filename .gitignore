@@ -22,3 +22,34 @@ vlr_page.html
 # OS files
 .DS_Store
 Thumbs.db
+# Temporary data collection scripts
+add_*.py
+temp_*.py
+temp_*.json
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Temporary files
+add_*.py
+temp_*.py
+temp_*.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Data (except what's needed)
+data/*.json
+!data/vct_matches_2024.json
+!data/team_ratings.json

@@ -1,5 +1,7 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import pytest
-from historical_validation import HistoricalValidator
+from scripts.historical_validation import HistoricalValidator
 
 
 class TestHistoricalValidation:
@@ -29,7 +31,7 @@ class TestHistoricalValidation:
         validator = HistoricalValidator()
         
         # Monkey-patch the file creation to use tmp_path
-        import historical_validation
+        import scripts.historical_validation as historical_validation
         original_open = open
         
         def mock_open(filename, *args, **kwargs):

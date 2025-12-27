@@ -2,7 +2,7 @@ import pytest
 import json
 from io import StringIO
 import sys
-from bracket_simulator import BracketSimulator
+from src.bracket_simulator import BracketSimulator
 
 
 class TestOutputFormatting:

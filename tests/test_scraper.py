@@ -1,12 +1,14 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import pytest
 from unittest.mock import Mock, patch, MagicMock
-from vlr_http_scraper import ValorantHTTPScraper
+from scripts.vlr_http_scraper import ValorantHTTPScraper
 
 
 class TestVLRScraper:
     """Test VLR.gg scraping functionality."""
 
-    @patch('vlr_http_scraper.requests.Session.get')
+    @patch('scripts.vlr_http_scraper.requests.Session.get')
     def test_scraper_makes_request(self, mock_get):
         """Should make HTTP request to VLR.gg."""
         mock_response = Mock()
@@ -45,7 +47,7 @@ class TestVLRScraper:
         vlr_1500_elo = 1400 + (1500 - 1500) * 0.6
         assert vlr_1500_elo == 1400.0
 
-    @patch('vlr_http_scraper.requests.Session.get')
+    @patch('scripts.vlr_http_scraper.requests.Session.get')
     def test_scraper_respects_limit(self, mock_get):
         """Should stop scraping after reaching limit."""
         # Create mock HTML with multiple teams

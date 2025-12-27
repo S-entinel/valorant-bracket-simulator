@@ -1,6 +1,6 @@
 import pytest
 import math
-from bracket_simulator import BracketSimulator
+from src.bracket_simulator import BracketSimulator
 
 
 class TestELOCalculations:

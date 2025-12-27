@@ -1,6 +1,614 @@
 {
   "matches": [
     {
+      "team_a": "Bilibili Gaming",
+      "team_b": "TYLOO",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Wolves Esports",
+      "team_b": "Titan Esports Club",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Dragon Ranger Gaming",
+      "team_b": "All Gamers",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "JDG Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Nova Esports",
+      "team_b": "Trace Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "Wolves Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "JDG Esports",
+      "team_b": "Nova Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "Dragon Ranger Gaming",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "All Gamers",
+      "team_b": "Wolves Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "Bilibili Gaming",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Dragon Ranger Gaming",
+      "team_b": "Titan Esports Club",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "TYLOO",
+      "team_b": "EDward Gaming",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Wolves Esports",
+      "team_b": "Trace Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Nova Esports",
+      "team_b": "FunPlus Phoenix",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Bilibili Gaming",
+      "team_b": "All Gamers",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Dragon Ranger Gaming",
+      "team_b": "JDG Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "TYLOO",
+      "team_b": "Nova Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Titan Esports Club",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Titan Esports Club",
+      "team_b": "Bilibili Gaming",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "Dragon Ranger Gaming",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "TYLOO",
+      "team_b": "Wolves Esports",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "EDward Gaming",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "All Gamers",
+      "team_b": "Nova Esports",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Bilibili Gaming",
+      "team_b": "JDG Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "All Gamers",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Wolves Esports",
+      "team_b": "JDG Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Dragon Ranger Gaming",
+      "team_b": "TYLOO",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Bilibili Gaming",
+      "team_b": "FunPlus Phoenix",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Nova Esports",
+      "team_b": "Titan Esports Club",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "EDward Gaming",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "All Gamers",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "Dragon Ranger Gaming",
+      "team_b": "Nova Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "Trace Esports",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Dragon Ranger Gaming",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "EDward Gaming",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Upper Final"
+    },
+    {
+      "team_a": "Trace Esports",
+      "team_b": "Dragon Ranger Gaming",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "EDward Gaming",
+      "team_b": "Dragon Ranger Gaming",
+      "score_a": 3,
+      "score_b": 1,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Lower Final"
+    },
+    {
+      "team_a": "FunPlus Phoenix",
+      "team_b": "EDward Gaming",
+      "score_a": 1,
+      "score_b": 3,
+      "event": "VCT 2024: China Stage 1",
+      "round": "Grand Final"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "Evil Geniuses",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "100 Thieves",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "FURIA",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 1"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "100 Thieves",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "MIBR",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "FURIA",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "Evil Geniuses",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 2"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "MIBR",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "Evil Geniuses",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "FURIA",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "100 Thieves",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "Evil Geniuses",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "MIBR",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 3"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "MIBR",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "LOUD",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "FURIA",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "Evil Geniuses",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "100 Thieves",
+      "score_a": 2,
+      "score_b": 1,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 4"
+    },
+    {
+      "team_a": "Sentinels",
+      "team_b": "FURIA",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "NRG",
+      "team_b": "100 Thieves",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "MIBR",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "LOUD",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Week 5"
+    },
+    {
+      "team_a": "Cloud9",
+      "team_b": "G2 Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "100 Thieves",
+      "team_b": "LOUD",
+      "score_a": 2,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Knockout Round"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "G2 Esports",
+      "score_a": 0,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "LEVIAT\u00c1N",
+      "team_b": "100 Thieves",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Upper Semifinals"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "100 Thieves",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Upper Final"
+    },
+    {
+      "team_a": "KR\u00dc Esports",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 1,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Lower Round 1"
+    },
+    {
+      "team_a": "G2 Esports",
+      "team_b": "LEVIAT\u00c1N",
+      "score_a": 3,
+      "score_b": 2,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Lower Final"
+    },
+    {
+      "team_a": "100 Thieves",
+      "team_b": "G2 Esports",
+      "score_a": 3,
+      "score_b": 0,
+      "event": "VCT 2024: Americas Stage 1",
+      "round": "Grand Final"
+    },
+    {
       "team_a": "Gen.G",
       "team_b": "Sentinels",
       "score_a": 2,
@@ -714,8 +1322,9 @@
     }
   ],
   "metadata": {
-    "total_matches": 89,
+    "total_matches": 165,
     "scraped_at": "2025-12-24T22:53:01.196260",
-    "source": "vlr.gg"
+    "source": "vlr.gg",
+    "note": "Includes China Stage 1 (38 matches) + Americas Stage 1 (38 matches) + original data"
   }
 }

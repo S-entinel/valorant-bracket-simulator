@@ -1,6 +1,6 @@
 import pytest
 import json
-from elo_calculator import ELOCalculator
+from src.elo_calculator import ELOCalculator
 
 
 class TestELOCalculator:
