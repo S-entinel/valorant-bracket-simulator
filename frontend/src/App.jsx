@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import TeamSelector from './components/TeamSelector';
 import SimulationControls from './components/SimulationControls';
 import SimulationResults from './components/SimulationResults';
+import BracketVisualization from './components/BracketVisualization';
 import Statistics from './components/Statistics';
 import { teamsAPI, simulationsAPI, statsAPI } from './services/api';
 import './index.css';
@@ -14,6 +15,7 @@ function App() {
   const [results, setResults] = useState(null);
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
+  const [viewMode, setViewMode] = useState('results'); // 'results' or 'bracket'
 
   // Load teams on mount
   useEffect(() => {
@@ -70,6 +72,7 @@ function App() {
       });
 
       setResults(response.data);
+      setViewMode('results'); // Auto-switch to results view
       loadStats(); // Refresh stats after simulation
     } catch (err) {
       setError(err.response?.data?.detail || 'Simulation failed');
@@ -81,6 +84,7 @@ function App() {
 
   const handleClearResults = () => {
     setResults(null);
+    setViewMode('results');
   };
 
   const handleClearSelection = () => {
@@ -137,11 +141,54 @@ function App() {
               disabled={selectedTeams.length < 2}
             />
 
-            {/* Results */}
+            {/* Results View Toggle */}
             {results && (
+              <div className="flex items-center justify-between bg-valorant-gray rounded-lg p-4">
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setViewMode('results')}
+                    className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                      viewMode === 'results'
+                        ? 'bg-valorant-red text-white'
+                        : 'bg-valorant-dark text-gray-300 hover:bg-gray-700'
+                    }`}
+                  >
+                    📊 Results & Charts
+                  </button>
+                  <button
+                    onClick={() => setViewMode('bracket')}
+                    className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                      viewMode === 'bracket'
+                        ? 'bg-valorant-red text-white'
+                        : 'bg-valorant-dark text-gray-300 hover:bg-gray-700'
+                    }`}
+                  >
+                    🏆 Tournament Bracket
+                  </button>
+                </div>
+                <button
+                  onClick={handleClearResults}
+                  className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                >
+                  Clear Results
+                </button>
+              </div>
+            )}
+
+            {/* Results Display */}
+            {results && viewMode === 'results' && (
               <SimulationResults
                 results={results}
                 onClear={handleClearResults}
+              />
+            )}
+
+            {/* Bracket Display */}
+            {results && viewMode === 'bracket' && (
+              <BracketVisualization
+                results={results.results}
+                teamsCount={results.teams_count}
+                bestOf={results.best_of}
               />
             )}
 
