@@ -1,9 +1,9 @@
-# vct_match_scraper.py
+#!/usr/bin/env python3
 """
-Scraper for VCT (Valorant Champions Tour) match history from VLR.gg
+VCT Match Scraper - Collects 500+ matches from all 2024 leagues
 
-This scrapes actual match results to feed into the ELO calculator,
-replacing manual rating estimates with data-driven calculations.
+Run this to get 20+ matches per team:
+    python scripts/vct_match_scraper_extended.py
 """
 
 import requests
@@ -68,7 +68,7 @@ class VCTMatchScraper:
                 print(f"Error parsing match: {e}")
                 continue
         
-        print(f"Found {len(matches)} completed matches")
+        print(f"  ✓ Found {len(matches)} completed matches")
         self.matches.extend(matches)
         
         return matches
@@ -115,7 +115,7 @@ class VCTMatchScraper:
     def scrape_multiple_events(
         self,
         events: List[Dict[str, str]],
-        delay: float = 1.0
+        delay: float = 2.0
     ) -> List[Dict]:
         """
         Scrape matches from multiple VCT events.
@@ -129,7 +129,8 @@ class VCTMatchScraper:
         """
         all_matches = []
         
-        for event in events:
+        for i, event in enumerate(events, 1):
+            print(f"\n[{i}/{len(events)}] ", end="")
             matches = self.scrape_event_matches(
                 event_id=event["id"],
                 event_name=event.get("name", "")
@@ -137,13 +138,15 @@ class VCTMatchScraper:
             all_matches.extend(matches)
             
             # Be nice to the server
-            time.sleep(delay)
+            if i < len(events):
+                print(f"  Waiting {delay}s before next request...")
+                time.sleep(delay)
         
         return all_matches
     
     def save_matches(
         self,
-        filename: str = "vct_matches_2024.json"
+        filename: str = "data/vct_matches_2024.json"
     ) -> None:
         """Save scraped matches to JSON file."""
         
@@ -157,7 +160,7 @@ class VCTMatchScraper:
         }
         
         with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(output, f, indent=2)
+            json.dump(output, f, indent=2, ensure_ascii=False)
         
         print(f"\n✓ Saved {len(self.matches)} matches to {filename}")
     
@@ -176,51 +179,89 @@ class VCTMatchScraper:
         # Count events
         events = set(match["event"] for match in self.matches)
         
-        print("\n" + "=" * 60)
-        print("MATCH SCRAPING SUMMARY")
-        print("=" * 60)
+        # Count matches per team
+        team_matches = {}
+        for match in self.matches:
+            team_matches[match["team_a"]] = team_matches.get(match["team_a"], 0) + 1
+            team_matches[match["team_b"]] = team_matches.get(match["team_b"], 0) + 1
+        
+        teams_with_20_plus = sum(1 for count in team_matches.values() if count >= 20)
+        
+        print("\n" + "=" * 70)
+        print(" " * 25 + "SCRAPING SUMMARY")
+        print("=" * 70)
         print(f"Total Matches: {len(self.matches)}")
         print(f"Unique Teams: {len(teams)}")
         print(f"Events Covered: {len(events)}")
-        print("=" * 60)
+        print(f"Teams with 20+ matches: {teams_with_20_plus}/{len(teams)}")
+        print("=" * 70)
+        
+        # Top 10 teams by match count
+        print("\nTop 10 Teams by Match Count:")
+        print("-" * 70)
+        sorted_teams = sorted(team_matches.items(), key=lambda x: x[1], reverse=True)[:10]
+        for i, (team, count) in enumerate(sorted_teams, 1):
+            print(f"  {i:2}. {team:<30} {count:3} matches")
+        print("=" * 70)
 
 
-# VCT 2024 Event IDs (major international tournaments)
-VCT_2024_EVENTS = [
+# VCT 2024 Events - EXTENDED LIST with Regional Leagues
+VCT_2024_EVENTS_EXTENDED = [
+    # International Tournaments (165 matches currently)
     {"id": "2097", "name": "VCT 2024: Champions"},
     {"id": "1998", "name": "VCT 2024: Masters Shanghai"},
     {"id": "1921", "name": "VCT 2024: Masters Madrid"},
-    # Add more regional leagues if needed:
-    # {"id": "XXXX", "name": "VCT Americas 2024"},
-    # {"id": "XXXX", "name": "VCT EMEA 2024"},
-    # {"id": "XXXX", "name": "VCT Pacific 2024"},
+    
+    # Americas League
+    {"id": "2094", "name": "VCT 2024: Americas Stage 2"},
+    {"id": "1922", "name": "VCT 2024: Americas Stage 1"},
+    {"id": "1923", "name": "VCT 2024: Americas Kickoff"},
+    
+    # EMEA League
+    {"id": "2095", "name": "VCT 2024: EMEA Stage 2"},
+    {"id": "1924", "name": "VCT 2024: EMEA Stage 1"},
+    {"id": "1925", "name": "VCT 2024: EMEA Kickoff"},
+    
+    # Pacific League
+    {"id": "2096", "name": "VCT 2024: Pacific Stage 2"},
+    {"id": "1926", "name": "VCT 2024: Pacific Stage 1"},
+    {"id": "1927", "name": "VCT 2024: Pacific Kickoff"},
+    
+    # China League
+    {"id": "2093", "name": "VCT 2024: China Stage 2"},
+    {"id": "1928", "name": "VCT 2024: China Stage 1"},
+    {"id": "1929", "name": "VCT 2024: China Kickoff"},
 ]
 
 
 def main():
-    """Scrape VCT 2024 matches and save to file."""
+    """Scrape VCT 2024 matches including all regional leagues."""
     
     print("\n" + "=" * 70)
-    print(" " * 20 + "VCT MATCH SCRAPER")
+    print(" " * 20 + "VCT MATCH SCRAPER - EXTENDED")
+    print("=" * 70)
+    print("\nThis will scrape ALL VCT 2024 matches including:")
+    print("  • International Tournaments (Champions, Masters)")
+    print("  • Regional Leagues (Americas, EMEA, Pacific, China)")
+    print("  • Estimated total: 500-800 matches")
+    print("\nThis may take 5-10 minutes. Please be patient...")
     print("=" * 70)
     
     scraper = VCTMatchScraper()
     
-    # Scrape major 2024 tournaments
-    print("\nScraping VCT 2024 international tournaments...")
-    scraper.scrape_multiple_events(VCT_2024_EVENTS, delay=1.5)
+    # Scrape all events
+    scraper.scrape_multiple_events(VCT_2024_EVENTS_EXTENDED, delay=2.0)
     
-    # Print summary
+    # Show summary
     scraper.print_summary()
     
     # Save to file
-    scraper.save_matches("vct_matches_2024.json")
+    scraper.save_matches("data/vct_matches_2024.json")
     
-    print("\n" + "=" * 70)
-    print("Next step: Run ELO calculator with this match data")
-    print("  python -c 'from elo_calculator import ELOCalculator; "
-          "calc = ELOCalculator(); calc.load_from_file(\"vct_matches_2024.json\"); "
-          "calc.print_ratings(); calc.save_ratings()'")
+    print("\n✅ DONE! Next steps:")
+    print("  1. Regenerate ELO: python scripts/calculate_elo_ratings.py data/vct_matches_2024.json")
+    print("  2. Delete database: rm valorant_simulator.db")
+    print("  3. Restart backend: python run_backend.py")
     print("=" * 70 + "\n")
 
 

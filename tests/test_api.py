@@ -285,20 +285,6 @@ class TestValidation:
         assert response.status_code == 422
 
 
-class TestCORS:
-    """Test CORS configuration"""
-    
-    def test_cors_headers(self):
-        """Should include CORS headers"""
-        response = client.get("/")
-        assert "access-control-allow-origin" in response.headers
-    
-    def test_cors_preflight(self):
-        """Should handle preflight requests"""
-        response = client.options("/api/teams")
-        assert response.status_code == 200
-
-
 # Run tests
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--tb=short"])

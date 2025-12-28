@@ -65,6 +65,7 @@ class SimulationResponse(BaseModel):
     teams_count: int
     num_simulations: int
     best_of: int
+    elo_sigma: Optional[float] = None
     results: Optional[List[Dict[str, Any]]] = None
     metadata: Optional[Dict[str, Any]] = None
 
@@ -100,13 +101,13 @@ async def root():
 # Team endpoints
 @app.get("/api/teams", response_model=List[TeamResponse])
 async def get_teams(
-    region: Optional[str] = None,
-    min_rating: Optional[float] = None,
-    max_rating: Optional[float] = None,
-    limit: Optional[int] = None
+     region: Optional[str] = None,
+     min_rating: Optional[float] = None,
+     max_rating: Optional[float] = None,
+     limit: Optional[int] = None
 ):
     """
-    Get list of teams with optional filtering
+   Get list of teams with optional filtering
     
     Query Parameters:
     - region: Filter by region (e.g., "Americas", "EMEA", "Pacific", "China")
@@ -114,10 +115,14 @@ async def get_teams(
     - max_rating: Maximum ELO rating
     - limit: Maximum number of teams to return
     """
+
+    if limit is not None and limit < 1:
+            raise HTTPException(status_code=422, detail="Limit must be at least 1")
+        
     try:
         teams = team_service.get_teams(
             region=region,
-            min_rating=min_rating,
+        min_rating=min_rating,
             max_rating=max_rating,
             limit=limit
         )

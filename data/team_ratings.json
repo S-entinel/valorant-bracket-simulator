@@ -2,276 +2,635 @@
   "teams": [
     {
       "id": "1",
-      "name": "EDward Gaming",
-      "elo_rating": 1571.5,
-      "matches_played": 20,
-      "rank": 1
+      "name": "Team Falcons",
+      "elo_rating": 1647.4,
+      "matches_played": 13,
+      "rank": 1,
+      "region": "MENA"
     },
     {
       "id": "2",
-      "name": "LEVIAT\u00c1N",
-      "elo_rating": 1571.4,
-      "matches_played": 15,
-      "rank": 2
+      "name": "LEVIATÁN",
+      "elo_rating": 1598.8,
+      "matches_played": 19,
+      "rank": 2,
+      "region": "Americas"
     },
     {
       "id": "3",
-      "name": "100 Thieves",
-      "elo_rating": 1570.1,
-      "matches_played": 9,
-      "rank": 3
+      "name": "Team Heretics",
+      "elo_rating": 1594.6,
+      "matches_played": 32,
+      "rank": 3,
+      "region": "EMEA"
     },
     {
       "id": "4",
-      "name": "Team Heretics",
-      "elo_rating": 1565.4,
-      "matches_played": 19,
-      "rank": 4
+      "name": "FNATIC",
+      "elo_rating": 1584.1,
+      "matches_played": 27,
+      "rank": 4,
+      "region": "EMEA"
     },
     {
       "id": "5",
-      "name": "Sentinels",
-      "elo_rating": 1560.9,
-      "matches_played": 19,
-      "rank": 5
+      "name": "EDward Gaming",
+      "elo_rating": 1574.3,
+      "matches_played": 20,
+      "rank": 5,
+      "region": "China"
     },
     {
       "id": "6",
       "name": "Gen.G",
-      "elo_rating": 1530.3,
-      "matches_played": 8,
-      "rank": 6
+      "elo_rating": 1570.3,
+      "matches_played": 15,
+      "rank": 6,
+      "region": "Pacific"
     },
     {
       "id": "7",
-      "name": "FNATIC",
-      "elo_rating": 1525.4,
-      "matches_played": 17,
-      "rank": 7
+      "name": "G2 Esports",
+      "elo_rating": 1567.9,
+      "matches_played": 16,
+      "rank": 7,
+      "region": "Americas"
     },
     {
       "id": "8",
-      "name": "KR\u00dc Esports",
-      "elo_rating": 1524.5,
-      "matches_played": 11,
-      "rank": 8
+      "name": "Sentinels",
+      "elo_rating": 1556.0,
+      "matches_played": 25,
+      "rank": 8,
+      "region": "Americas"
     },
     {
       "id": "9",
-      "name": "DRX",
-      "elo_rating": 1516.9,
-      "matches_played": 5,
-      "rank": 9
+      "name": "Underground Gaming",
+      "elo_rating": 1552.1,
+      "matches_played": 20,
+      "rank": 9,
+      "region": "SEA"
     },
     {
       "id": "10",
-      "name": "FUT Esports",
-      "elo_rating": 1516.3,
-      "matches_played": 10,
-      "rank": 10
+      "name": "Rare Atom",
+      "elo_rating": 1550.3,
+      "matches_played": 5,
+      "rank": 10,
+      "region": "China"
     },
     {
       "id": "11",
-      "name": "G2 Esports",
-      "elo_rating": 1511.2,
-      "matches_played": 15,
-      "rank": 11
+      "name": "DRAGONS",
+      "elo_rating": 1544.8,
+      "matches_played": 11,
+      "rank": 11,
+      "region": "SEA"
     },
     {
       "id": "12",
-      "name": "FunPlus Phoenix",
-      "elo_rating": 1510.4,
-      "matches_played": 12,
-      "rank": 12
+      "name": "Team Slandy",
+      "elo_rating": 1542.6,
+      "matches_played": 5,
+      "rank": 12,
+      "region": "Unknown"
     },
     {
       "id": "13",
-      "name": "Natus Vincere",
-      "elo_rating": 1509.9,
-      "matches_played": 6,
-      "rank": 13
+      "name": "The Ultimates",
+      "elo_rating": 1540.8,
+      "matches_played": 20,
+      "rank": 13,
+      "region": "SEA"
     },
     {
       "id": "14",
-      "name": "Paper Rex",
-      "elo_rating": 1506.5,
-      "matches_played": 9,
-      "rank": 14
+      "name": "Karmine Corp",
+      "elo_rating": 1538.9,
+      "matches_played": 24,
+      "rank": 14,
+      "region": "EMEA"
     },
     {
       "id": "15",
-      "name": "NRG",
-      "elo_rating": 1503.9,
-      "matches_played": 6,
-      "rank": 15
+      "name": "Team Maryna",
+      "elo_rating": 1533.4,
+      "matches_played": 5,
+      "rank": 15,
+      "region": "Unknown"
     },
     {
       "id": "16",
-      "name": "Team Spain",
-      "elo_rating": 1503.8,
-      "matches_played": 1,
-      "rank": 16
+      "name": "DRX",
+      "elo_rating": 1528.8,
+      "matches_played": 8,
+      "rank": 16,
+      "region": "Pacific"
     },
     {
       "id": "17",
-      "name": "Dragon Ranger Gaming",
-      "elo_rating": 1502.0,
-      "matches_played": 10,
-      "rank": 17
+      "name": "Trace Esports",
+      "elo_rating": 1525.7,
+      "matches_played": 19,
+      "rank": 17,
+      "region": "China"
     },
     {
       "id": "18",
-      "name": "LOUD",
-      "elo_rating": 1499.8,
-      "matches_played": 11,
-      "rank": 18
+      "name": "Team Secret",
+      "elo_rating": 1525.6,
+      "matches_played": 5,
+      "rank": 18,
+      "region": "Pacific"
     },
     {
       "id": "19",
-      "name": "Cloud9",
-      "elo_rating": 1497.9,
-      "matches_played": 7,
-      "rank": 19
+      "name": "Attacking Soul Esports",
+      "elo_rating": 1524.3,
+      "matches_played": 5,
+      "rank": 19,
+      "region": "China"
     },
     {
       "id": "20",
-      "name": "TYLOO",
-      "elo_rating": 1496.7,
-      "matches_played": 5,
-      "rank": 20
+      "name": "The Vicious",
+      "elo_rating": 1524.1,
+      "matches_played": 20,
+      "rank": 20,
+      "region": "SEA"
     },
     {
       "id": "21",
-      "name": "Team International",
-      "elo_rating": 1496.2,
-      "matches_played": 1,
-      "rank": 21
+      "name": "Paper Rex",
+      "elo_rating": 1518.1,
+      "matches_played": 12,
+      "rank": 21,
+      "region": "Pacific"
     },
     {
       "id": "22",
-      "name": "Team Liquid",
-      "elo_rating": 1494.9,
-      "matches_played": 7,
-      "rank": 22
+      "name": "Team Cece",
+      "elo_rating": 1513.6,
+      "matches_played": 4,
+      "rank": 22,
+      "region": "Unknown"
     },
     {
       "id": "23",
-      "name": "BBL Esports",
-      "elo_rating": 1489.3,
-      "matches_played": 6,
-      "rank": 23
+      "name": "LOUD",
+      "elo_rating": 1512.5,
+      "matches_played": 14,
+      "rank": 23,
+      "region": "Americas"
     },
     {
       "id": "24",
-      "name": "GIANTX",
-      "elo_rating": 1487.6,
-      "matches_played": 5,
-      "rank": 24
+      "name": "Bilibili Gaming",
+      "elo_rating": 1510.4,
+      "matches_played": 13,
+      "rank": 24,
+      "region": "China"
     },
     {
       "id": "25",
-      "name": "Karmine Corp",
-      "elo_rating": 1485.8,
-      "matches_played": 11,
-      "rank": 25
+      "name": "Team Vitality",
+      "elo_rating": 1506.9,
+      "matches_played": 23,
+      "rank": 25,
+      "region": "EMEA"
     },
     {
       "id": "26",
-      "name": "JDG Esports",
-      "elo_rating": 1484.5,
-      "matches_played": 5,
-      "rank": 26
+      "name": "Regnum Carya Esports",
+      "elo_rating": 1505.7,
+      "matches_played": 2,
+      "rank": 26,
+      "region": "EMEA"
     },
     {
       "id": "27",
-      "name": "Trace Esports",
-      "elo_rating": 1483.3,
-      "matches_played": 12,
-      "rank": 27
+      "name": "T1",
+      "elo_rating": 1504.7,
+      "matches_played": 3,
+      "rank": 27,
+      "region": "Pacific"
     },
     {
       "id": "28",
-      "name": "Gentle Mates",
-      "elo_rating": 1483.2,
-      "matches_played": 5,
-      "rank": 28
+      "name": "JDG Esports",
+      "elo_rating": 1504.6,
+      "matches_played": 9,
+      "rank": 28,
+      "region": "China"
     },
     {
       "id": "29",
-      "name": "Evil Geniuses",
-      "elo_rating": 1481.0,
-      "matches_played": 5,
-      "rank": 29
+      "name": "Team Spain",
+      "elo_rating": 1503.8,
+      "matches_played": 1,
+      "rank": 29,
+      "region": "EMEA"
     },
     {
       "id": "30",
-      "name": "All Gamers",
-      "elo_rating": 1477.9,
-      "matches_played": 6,
-      "rank": 30
+      "name": "Twisted Minds",
+      "elo_rating": 1503.6,
+      "matches_played": 16,
+      "rank": 30,
+      "region": "EMEA"
     },
     {
       "id": "31",
-      "name": "Team Vitality",
-      "elo_rating": 1476.1,
-      "matches_played": 9,
-      "rank": 31
+      "name": "Team Starriebun",
+      "elo_rating": 1501.2,
+      "matches_played": 4,
+      "rank": 31,
+      "region": "Unknown"
     },
     {
       "id": "32",
-      "name": "Titan Esports Club",
-      "elo_rating": 1472.5,
-      "matches_played": 5,
-      "rank": 32
+      "name": "Team Aniemal",
+      "elo_rating": 1500.6,
+      "matches_played": 3,
+      "rank": 32,
+      "region": "Unknown"
     },
     {
       "id": "33",
-      "name": "TALON",
-      "elo_rating": 1470.1,
-      "matches_played": 2,
-      "rank": 33
+      "name": "FUT Esports",
+      "elo_rating": 1500.2,
+      "matches_played": 20,
+      "rank": 33,
+      "region": "EMEA"
     },
     {
       "id": "34",
-      "name": "Wolves Esports",
-      "elo_rating": 1469.9,
-      "matches_played": 6,
-      "rank": 34
+      "name": "Dragon Ranger Gaming",
+      "elo_rating": 1499.8,
+      "matches_played": 14,
+      "rank": 34,
+      "region": "China"
     },
     {
       "id": "35",
-      "name": "Nova Esports",
-      "elo_rating": 1468.2,
-      "matches_played": 7,
-      "rank": 35
+      "name": "Team NVus",
+      "elo_rating": 1498.5,
+      "matches_played": 2,
+      "rank": 35,
+      "region": "Unknown"
     },
     {
       "id": "36",
-      "name": "KOI",
-      "elo_rating": 1458.4,
-      "matches_played": 5,
-      "rank": 36
+      "name": "Galatasaray Esports",
+      "elo_rating": 1498.5,
+      "matches_played": 2,
+      "rank": 36,
+      "region": "EMEA"
     },
     {
       "id": "37",
-      "name": "Bilibili Gaming",
-      "elo_rating": 1452.2,
-      "matches_played": 8,
-      "rank": 37
+      "name": "Team Mle",
+      "elo_rating": 1497.9,
+      "matches_played": 3,
+      "rank": 37,
+      "region": "Unknown"
     },
     {
       "id": "38",
-      "name": "FURIA",
-      "elo_rating": 1446.0,
-      "matches_played": 5,
-      "rank": 38
+      "name": "PCIFIC Espor",
+      "elo_rating": 1497.3,
+      "matches_played": 2,
+      "rank": 38,
+      "region": "Unknown"
     },
     {
       "id": "39",
-      "name": "MIBR",
-      "elo_rating": 1428.2,
+      "name": "Team International",
+      "elo_rating": 1496.2,
+      "matches_played": 1,
+      "rank": 39,
+      "region": "Unknown"
+    },
+    {
+      "id": "40",
+      "name": "ZETA DIVISION",
+      "elo_rating": 1494.0,
       "matches_played": 5,
-      "rank": 39
+      "rank": 40,
+      "region": "Pacific"
+    },
+    {
+      "id": "41",
+      "name": "Team Korosu",
+      "elo_rating": 1493.0,
+      "matches_played": 2,
+      "rank": 41,
+      "region": "Unknown"
+    },
+    {
+      "id": "42",
+      "name": "NRG",
+      "elo_rating": 1493.0,
+      "matches_played": 7,
+      "rank": 42,
+      "region": "Americas"
+    },
+    {
+      "id": "43",
+      "name": "FunPlus Phoenix",
+      "elo_rating": 1492.1,
+      "matches_played": 17,
+      "rank": 43,
+      "region": "China"
+    },
+    {
+      "id": "44",
+      "name": "Evil Geniuses",
+      "elo_rating": 1492.0,
+      "matches_played": 7,
+      "rank": 44,
+      "region": "Americas"
+    },
+    {
+      "id": "45",
+      "name": "Rex Regum Qeon",
+      "elo_rating": 1491.9,
+      "matches_played": 2,
+      "rank": 45,
+      "region": "Pacific"
+    },
+    {
+      "id": "46",
+      "name": "17Gaming",
+      "elo_rating": 1488.1,
+      "matches_played": 2,
+      "rank": 46,
+      "region": "China"
+    },
+    {
+      "id": "47",
+      "name": "Wolves Esports",
+      "elo_rating": 1487.1,
+      "matches_played": 7,
+      "rank": 47,
+      "region": "China"
+    },
+    {
+      "id": "48",
+      "name": "Team Tupperware",
+      "elo_rating": 1487.0,
+      "matches_played": 3,
+      "rank": 48,
+      "region": "Unknown"
+    },
+    {
+      "id": "49",
+      "name": "Team Tiffae",
+      "elo_rating": 1485.8,
+      "matches_played": 3,
+      "rank": 49,
+      "region": "Unknown"
+    },
+    {
+      "id": "50",
+      "name": "Team Justhuggy",
+      "elo_rating": 1484.9,
+      "matches_played": 2,
+      "rank": 50,
+      "region": "Unknown"
+    },
+    {
+      "id": "51",
+      "name": "Four Angry Men",
+      "elo_rating": 1483.7,
+      "matches_played": 3,
+      "rank": 51,
+      "region": "EMEA"
+    },
+    {
+      "id": "52",
+      "name": "Night Wings Gaming",
+      "elo_rating": 1483.5,
+      "matches_played": 3,
+      "rank": 52,
+      "region": "Unknown"
+    },
+    {
+      "id": "53",
+      "name": "FURIA",
+      "elo_rating": 1483.3,
+      "matches_played": 7,
+      "rank": 53,
+      "region": "Americas"
+    },
+    {
+      "id": "54",
+      "name": "Team Kayzie",
+      "elo_rating": 1483.2,
+      "matches_played": 2,
+      "rank": 54,
+      "region": "Unknown"
+    },
+    {
+      "id": "55",
+      "name": "100 Thieves",
+      "elo_rating": 1483.2,
+      "matches_played": 10,
+      "rank": 55,
+      "region": "Americas"
+    },
+    {
+      "id": "56",
+      "name": "MIBR",
+      "elo_rating": 1480.3,
+      "matches_played": 10,
+      "rank": 56,
+      "region": "Americas"
+    },
+    {
+      "id": "57",
+      "name": "KRÜ Esports",
+      "elo_rating": 1480.1,
+      "matches_played": 13,
+      "rank": 57,
+      "region": "Americas"
+    },
+    {
+      "id": "58",
+      "name": "Nova Esports",
+      "elo_rating": 1480.1,
+      "matches_played": 7,
+      "rank": 58,
+      "region": "China"
+    },
+    {
+      "id": "59",
+      "name": "Onyx Ravens",
+      "elo_rating": 1479.0,
+      "matches_played": 18,
+      "rank": 59,
+      "region": "EMEA"
+    },
+    {
+      "id": "60",
+      "name": "BLEED",
+      "elo_rating": 1478.7,
+      "matches_played": 2,
+      "rank": 60,
+      "region": "Pacific"
+    },
+    {
+      "id": "61",
+      "name": "KeepBest Gaming",
+      "elo_rating": 1478.7,
+      "matches_played": 2,
+      "rank": 61,
+      "region": "China"
+    },
+    {
+      "id": "62",
+      "name": "Team Darleeng",
+      "elo_rating": 1476.7,
+      "matches_played": 2,
+      "rank": 62,
+      "region": "Unknown"
+    },
+    {
+      "id": "63",
+      "name": "Titan Esports Club",
+      "elo_rating": 1476.0,
+      "matches_played": 10,
+      "rank": 63,
+      "region": "China"
+    },
+    {
+      "id": "64",
+      "name": "Global Esports",
+      "elo_rating": 1474.3,
+      "matches_played": 3,
+      "rank": 64,
+      "region": "Pacific"
+    },
+    {
+      "id": "65",
+      "name": "Ninjas In Pyjamas",
+      "elo_rating": 1473.8,
+      "matches_played": 5,
+      "rank": 65,
+      "region": "EMEA"
+    },
+    {
+      "id": "66",
+      "name": "DetonatioN FocusMe",
+      "elo_rating": 1468.6,
+      "matches_played": 2,
+      "rank": 66,
+      "region": "Pacific"
+    },
+    {
+      "id": "67",
+      "name": "GIANTX",
+      "elo_rating": 1466.2,
+      "matches_played": 12,
+      "rank": 67,
+      "region": "EMEA"
+    },
+    {
+      "id": "68",
+      "name": "Vision Esports",
+      "elo_rating": 1465.6,
+      "matches_played": 16,
+      "rank": 68,
+      "region": "EMEA"
+    },
+    {
+      "id": "69",
+      "name": "Natus Vincere",
+      "elo_rating": 1464.8,
+      "matches_played": 15,
+      "rank": 69,
+      "region": "EMEA"
+    },
+    {
+      "id": "70",
+      "name": "Team Liquid",
+      "elo_rating": 1459.6,
+      "matches_played": 14,
+      "rank": 70,
+      "region": "EMEA"
+    },
+    {
+      "id": "71",
+      "name": "TALON",
+      "elo_rating": 1457.2,
+      "matches_played": 5,
+      "rank": 71,
+      "region": "Pacific"
+    },
+    {
+      "id": "72",
+      "name": "BBL Esports",
+      "elo_rating": 1456.7,
+      "matches_played": 12,
+      "rank": 72,
+      "region": "EMEA"
+    },
+    {
+      "id": "73",
+      "name": "Gentle Mates",
+      "elo_rating": 1454.0,
+      "matches_played": 12,
+      "rank": 73,
+      "region": "EMEA"
+    },
+    {
+      "id": "74",
+      "name": "KOI",
+      "elo_rating": 1448.2,
+      "matches_played": 15,
+      "rank": 74,
+      "region": "EMEA"
+    },
+    {
+      "id": "75",
+      "name": "Cloud9",
+      "elo_rating": 1446.6,
+      "matches_played": 8,
+      "rank": 75,
+      "region": "Americas"
+    },
+    {
+      "id": "76",
+      "name": "TYLOO",
+      "elo_rating": 1443.9,
+      "matches_played": 7,
+      "rank": 76,
+      "region": "China"
+    },
+    {
+      "id": "77",
+      "name": "All Gamers",
+      "elo_rating": 1443.7,
+      "matches_played": 8,
+      "rank": 77,
+      "region": "China"
+    },
+    {
+      "id": "78",
+      "name": "KR Esports",
+      "elo_rating": 1397.2,
+      "matches_played": 16,
+      "rank": 78,
+      "region": "EMEA"
+    },
+    {
+      "id": "79",
+      "name": "G3 Esports",
+      "elo_rating": 1345.5,
+      "matches_played": 16,
+      "rank": 79,
+      "region": "EMEA"
     }
   ],
   "metadata": {
@@ -279,7 +638,7 @@
     "k_factor": 32,
     "initial_rating": 1500.0,
     "use_map_scores": true,
-    "total_matches": 165,
-    "total_teams": 39
+    "total_matches": 387,
+    "total_teams": 79
   }
 }
