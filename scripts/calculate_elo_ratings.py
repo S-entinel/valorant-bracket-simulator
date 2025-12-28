@@ -15,8 +15,8 @@ from src.elo_calculator import ELOCalculator
 def main():
     parser = argparse.ArgumentParser(description='Calculate ELO ratings from match history')
     parser.add_argument('matches_file', help='Path to matches JSON file')
-    parser.add_argument('-o', '--output', default='../data/team_ratings.json', 
-                        help='Output file for ratings (default: ../data/team_ratings.json)')
+    parser.add_argument('-o', '--output', default='data/team_ratings.json', 
+                        help='Output file for ratings (default: data/team_ratings.json)')
     parser.add_argument('-k', '--k-factor', type=int, default=32,
                         help='ELO K-factor (default: 32)')
     parser.add_argument('-i', '--initial-rating', type=float, default=1500.0,
@@ -44,13 +44,13 @@ def main():
     calc = ELOCalculator(
         k_factor=args.k_factor,
         initial_rating=args.initial_rating,
-        use_map_score=not args.binary
+        use_map_scores=not args.binary
     )
     
     calc.process_matches(matches)
     
     print(f"Processed {len(matches)} matches")
-    print(f"Calculated ratings for {len(calc.teams)} teams")
+    print(f"Calculated ratings for {len(calc.ratings)} teams")
     
     # Display results
     calc.print_ratings(top_n=args.top_n)
