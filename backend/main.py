@@ -31,6 +31,7 @@ app.add_middleware(
         "http://localhost:5173",
         "https://valorant-bracket-simulator.vercel.app"
         "https://*.vercel.app", # Allow all Vercel preview deployments
+        "https://*.railway.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
