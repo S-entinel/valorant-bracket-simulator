@@ -29,6 +29,49 @@ function SimulationResults({ results, onClear }) {
     return colors[index] || colors[colors.length - 1];
   };
 
+  // Export to CSV
+  const exportToCSV = () => {
+    const headers = ['Rank', 'Team', 'Seed', 'ELO Rating', 'Championship %', 'Finals %', 'Semifinals %'];
+    const rows = results.results.map((team, index) => [
+      index + 1,
+      team.name,
+      team.seed,
+      Math.round(team.elo_rating),
+      team.championship_prob.toFixed(2),
+      team.finals_prob.toFixed(2),
+      team.semifinals_prob.toFixed(2)
+    ]);
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.join(','))
+    ].join('\n');
+
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `valorant-simulation-${Date.now()}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  };
+
+  // Copy to clipboard
+  const copyToClipboard = () => {
+    const text = results.results.map((team, index) => 
+      `${index + 1}. ${team.name} - ${team.championship_prob.toFixed(2)}% win chance`
+    ).join('\n');
+
+    navigator.clipboard.writeText(text).then(() => {
+      // Show success message (you could add a toast here)
+      alert('Results copied to clipboard!');
+    }).catch(err => {
+      console.error('Failed to copy:', err);
+    });
+  };
+
   return (
     <div className="bg-valorant-gray rounded-lg p-6">
       <div className="flex items-center justify-between mb-6">
@@ -38,12 +81,46 @@ function SimulationResults({ results, onClear }) {
             {results.num_simulations.toLocaleString()} simulations • {results.teams_count} teams • BO{results.best_of}
           </p>
         </div>
-        <button
-          onClick={onClear}
-          className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
-        >
-          Clear Results
-        </button>
+        <div className="flex gap-2">
+          {/* Export Dropdown */}
+          <div className="relative group">
+            <button className="px-4 py-2 bg-valorant-red hover:bg-red-600 text-white rounded-lg transition-colors flex items-center gap-2">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+              Export
+            </button>
+            {/* Dropdown menu */}
+            <div className="absolute right-0 mt-2 w-48 bg-valorant-dark rounded-lg shadow-lg border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10">
+              <button
+                onClick={exportToCSV}
+                className="w-full text-left px-4 py-2 hover:bg-gray-700 text-white rounded-t-lg transition-colors flex items-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+                </svg>
+                Download CSV
+              </button>
+              <button
+                onClick={copyToClipboard}
+                className="w-full text-left px-4 py-2 hover:bg-gray-700 text-white rounded-b-lg transition-colors flex items-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                  <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                </svg>
+                Copy to Clipboard
+              </button>
+            </div>
+          </div>
+          
+          <button
+            onClick={onClear}
+            className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+          >
+            Clear Results
+          </button>
+        </div>
       </div>
 
       {/* Championship Probability Chart */}

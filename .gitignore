@@ -44,6 +44,12 @@ __pycache__/
 *.pyd
 .Python
 
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+valorant_simulator.db
+
 # Coverage
 htmlcov/
 .coverage
