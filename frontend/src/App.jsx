@@ -29,7 +29,6 @@ function App() {
       setLoading(true);
       setError(null);
       
-      // Ensure minimum loading time to show spinner (800ms)
       const [response] = await Promise.all([
         teamsAPI.getAll(),
         new Promise(resolve => setTimeout(resolve, 800))
@@ -42,7 +41,6 @@ function App() {
     } catch (err) {
       console.error('Error loading teams:', err);
       
-      // Retry logic
       if (retryCount < 2) {
         console.log(`Retrying... (${retryCount + 1}/2)`);
         addToast('Connection failed, retrying...', 'warning', 2000);
@@ -51,8 +49,8 @@ function App() {
         return loadTeams(retryCount + 1);
       }
       
-      setError('Failed to load teams. Make sure the backend is running at http://localhost:8000');
-      addToast('Failed to connect to backend', 'error', 5000);
+      setError('Failed to load teams. Please check that the backend is running.');
+      addToast('Could not connect to backend', 'error', 5000);
     } finally {
       setLoading(false);
     }
@@ -71,45 +69,30 @@ function App() {
     setSelectedTeams(prev => {
       if (prev.includes(teamId)) {
         return prev.filter(id => id !== teamId);
-      } else {
-        if (prev.length >= 32) {
-          addToast('Maximum 32 teams allowed', 'warning');
-          return prev;
-        }
-        return [...prev, teamId];
       }
+      if (prev.length >= 16) {
+        addToast('Maximum 16 teams allowed', 'warning');
+        return prev;
+      }
+      return [...prev, teamId];
     });
   };
 
   const handleRunSimulation = async (params) => {
-    if (selectedTeams.length < 2) {
-      setError('Please select at least 2 teams');
-      addToast('Select at least 2 teams to run simulation', 'warning');
-      return;
-    }
-
-    if (selectedTeams.length > 32) {
-      setError('Maximum 32 teams allowed');
-      addToast('Maximum 32 teams allowed', 'warning');
-      return;
-    }
-
     try {
       setSimulating(true);
       setError(null);
       
-      addToast(`Running ${params.num_simulations.toLocaleString()} simulations...`, 'info', 2000);
-      
       const response = await simulationsAPI.run({
         team_ids: selectedTeams,
-        ...params,
+        num_simulations: params.numSimulations,
+        best_of: params.bestOf,
+        elo_sigma: params.eloSigma || null,
       });
-
+      
       setResults(response.data);
       setViewMode('results');
-      loadStats();
-      
-      addToast('Simulation complete!', 'success');
+      addToast('Simulation completed', 'success');
     } catch (err) {
       const errorMessage = err.response?.data?.detail || 'Simulation failed';
       setError(errorMessage);
@@ -138,31 +121,31 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-valorant-darker">
+    <div className="min-h-screen bg-black">
       <ToastContainer toasts={toasts} removeToast={removeToast} />
 
-      <header className="bg-valorant-dark border-b-2 border-valorant-red">
+      <header className="bg-neutral-900 border-b border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-4xl font-bold text-white">
-            🎯 Valorant Tournament Simulator
+          <h1 className="text-3xl font-semibold text-white tracking-tight">
+            Valorant Tournament Simulator
           </h1>
-          <p className="text-gray-400 mt-2">
-            Monte Carlo simulation engine for VCT tournament predictions
+          <p className="text-neutral-400 mt-1 text-sm">
+            Monte Carlo simulation engine for tournament predictions
           </p>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-8">
         {error && (
-          <div className="mb-6 bg-red-900/50 border border-red-500 text-white px-4 py-3 rounded flex items-center justify-between">
-            <div>
-              <strong>Error:</strong> {error}
+          <div className="mb-6 bg-red-950/50 border border-red-800 text-red-200 px-4 py-3 rounded-lg flex items-center justify-between">
+            <div className="text-sm">
+              <strong className="font-medium">Error:</strong> {error}
             </div>
             <button
               onClick={handleRetryConnection}
-              className="px-4 py-2 bg-red-700 hover:bg-red-600 rounded transition-colors text-sm font-medium"
+              className="px-3 py-1.5 bg-red-900 hover:bg-red-800 rounded text-sm font-medium transition-colors"
             >
-              Retry Connection
+              Retry
             </button>
           </div>
         )}
@@ -171,14 +154,12 @@ function App() {
           <Statistics stats={stats} />
         )}
 
-        {/* LOADING STATE - Now more visible */}
         {loading ? (
           <div className="mt-6">
-            <div className="bg-valorant-gray rounded-lg p-16 text-center">
+            <div className="bg-neutral-900 rounded-lg p-16 text-center border border-neutral-800">
               <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 border-4 border-gray-700 border-t-valorant-red rounded-full animate-spin"></div>
-                <p className="text-gray-400 text-lg animate-pulse">Loading teams...</p>
-                <p className="text-gray-500 text-sm">Connecting to backend...</p>
+                <div className="w-12 h-12 border-2 border-neutral-700 border-t-white rounded-full animate-spin"></div>
+                <p className="text-neutral-400 text-sm">Loading teams...</p>
               </div>
             </div>
           </div>
@@ -203,34 +184,34 @@ function App() {
               />
 
               {results && (
-                <div className="flex items-center justify-between bg-valorant-gray rounded-lg p-4">
+                <div className="flex items-center justify-between bg-neutral-900 rounded-lg p-3 border border-neutral-800">
                   <div className="flex gap-2">
                     <button
                       onClick={() => setViewMode('results')}
-                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                      className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                         viewMode === 'results'
-                          ? 'bg-valorant-red text-white'
-                          : 'bg-valorant-dark text-gray-300 hover:bg-gray-700'
+                          ? 'bg-white text-black'
+                          : 'bg-neutral-800 text-neutral-300 hover:bg-neutral-700'
                       }`}
                     >
-                      📊 Results & Charts
+                      Results & Charts
                     </button>
                     <button
                       onClick={() => setViewMode('bracket')}
-                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                      className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                         viewMode === 'bracket'
-                          ? 'bg-valorant-red text-white'
-                          : 'bg-valorant-dark text-gray-300 hover:bg-gray-700'
+                          ? 'bg-white text-black'
+                          : 'bg-neutral-800 text-neutral-300 hover:bg-neutral-700'
                       }`}
                     >
-                      🏆 Tournament Bracket
+                      Tournament Bracket
                     </button>
                   </div>
                   <button
                     onClick={handleClearResults}
-                    className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                    className="px-3 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md transition-colors text-sm"
                   >
-                    Clear Results
+                    Clear
                   </button>
                 </div>
               )}
@@ -251,12 +232,12 @@ function App() {
               )}
 
               {!results && !simulating && (
-                <div className="bg-valorant-gray rounded-lg p-12 text-center">
-                  <div className="text-gray-400 text-lg">
-                    <p className="mb-2">👈 Select teams from the left</p>
+                <div className="bg-neutral-900 rounded-lg p-12 text-center border border-neutral-800">
+                  <div className="text-neutral-400 text-sm space-y-2">
+                    <p>Select teams from the left panel</p>
                     <p>Configure parameters above</p>
-                    <p className="mt-4 text-sm">
-                      Then click "Run Simulation" to predict tournament outcomes
+                    <p className="mt-4 text-xs text-neutral-500">
+                      Click "Run Simulation" to predict tournament outcomes
                     </p>
                   </div>
                 </div>
@@ -266,14 +247,9 @@ function App() {
         )}
       </main>
 
-      <footer className="bg-valorant-dark border-t border-valorant-gray mt-12 py-6">
-        <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
-          <p>Built with React + FastAPI | ELO-based Monte Carlo Simulation</p>
-          <p className="text-sm mt-2">
-            Backend: <a href="http://localhost:8000/docs" target="_blank" rel="noopener noreferrer" className="text-valorant-red hover:underline">
-              API Docs
-            </a> | Frontend: <span className="text-valorant-red">v1.0.0</span>
-          </p>
+      <footer className="bg-neutral-900 border-t border-neutral-800 mt-12 py-6">
+        <div className="max-w-7xl mx-auto px-4 text-center text-neutral-500 text-xs">
+          <p>ELO-based Monte Carlo Simulation</p>
         </div>
       </footer>
     </div>

@@ -9,8 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0F1923;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 code {
@@ -20,23 +20,19 @@ code {
 
 /* Mobile-specific improvements */
 @media (max-width: 768px) {
-  /* Prevent horizontal scroll on bracket */
   .overflow-x-auto {
     -webkit-overflow-scrolling: touch;
   }
   
-  /* Better touch targets */
   button {
     min-height: 44px;
     min-width: 44px;
   }
   
-  /* Stack columns on mobile */
   .lg\:grid-cols-3 {
     grid-template-columns: 1fr !important;
   }
   
-  /* Smaller text on mobile */
   h1 {
     font-size: 1.875rem !important;
   }
@@ -46,7 +42,6 @@ code {
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -58,16 +53,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1C2733;
+  background: #171717;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF4655;
+  background: #404040;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff6b77;
+  background: #525252;
 }
 
 /* Loading animation */
@@ -109,4 +104,19 @@ html {
 
 .toast-enter {
   animation: slideIn 0.3s ease-out;
+}
+
+/* Focus styles */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Transitions */
+* {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
