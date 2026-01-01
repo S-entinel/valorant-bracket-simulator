@@ -82,10 +82,33 @@ class ValidationRequest(BaseModel):
 # Database initialization
 @app.on_event("startup")
 async def startup():
-    """Initialize database on startup"""
+    """Initialize database and load team data on startup"""
+    print("\n" + "=" * 70)
+    print(" " * 15 + "VALORANT TOURNAMENT SIMULATOR API")
+    print("=" * 70)
+    
+    # Initialize database
+    print("\n[1/2] Initializing database...")
     init_db()
-    print("✓ Database initialized")
-    print("✓ FastAPI backend ready")
+    print("✓ Database tables created")
+    
+    # Load team data if database is empty
+    print("\n[2/2] Loading team data...")
+    team_count = team_service.get_team_count()
+    
+    if team_count == 0:
+        print("Database empty, loading teams from data files...")
+        team_service.refresh_team_data()
+        team_count = team_service.get_team_count()
+        avg_elo = team_service.get_average_elo()
+        print(f"✓ Loaded {team_count} teams")
+        print(f"✓ Average ELO: {avg_elo}")
+    else:
+        print(f"✓ Database already has {team_count} teams")
+    
+    print("\n" + "=" * 70)
+    print("✓ API ready at /docs")
+    print("=" * 70 + "\n")
 
 
 # Health check endpoint
