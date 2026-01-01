@@ -26,14 +26,8 @@ app = FastAPI(
 # Configure CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:5173",
-        "https://valorant-bracket-simulator.vercel.app",
-        "https://*.vercel.app",
-        "https://*.railway.app",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],  # ⚠️ TEMPORARY - Allows all origins
+    allow_credentials=False,  # Must be False with wildcard
     allow_methods=["*"],
     allow_headers=["*"],
 )
